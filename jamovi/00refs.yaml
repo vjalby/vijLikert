@@ -1,0 +1,11 @@
+---
+refs:
+    ggplots:
+        type: 'software'
+        author: Larmarange, J.
+        year: 2024
+        title: "ggstats: Extension to 'ggplot2' for Plotting Stats"
+        publisher: '[R package]. Retrieved from https://cran.r-project.org/package=ggstats'
+        url: https://cran.r-project.org/package=ggstats
+
+...

@@ -1,0 +1,81 @@
+---
+name:  likertplot
+title: Likert Plots
+menuGroup: Exploration
+menuTitle: Likert Plots
+menuSubgroup: vij Likert PLots
+version: '1.0.0'
+jas: '1.2'
+
+options:
+    - name: data
+      type: Data
+
+    - name: liks
+      title: Likert Variables
+      type: Variables
+
+    - name: group
+      title: Grouping Variable
+      type: Variable
+
+    - name: type
+      title: Plot Type
+      type: List
+      options:
+        - title: Centered
+          name:  centered
+        - title: Stacked
+          name:  stacked
+      default: centered
+
+    - name: groupBy
+      title: Group By
+      type: List
+      options:
+        - title: Variable
+          name:  variable
+        - title: Group
+          name:  group
+      default: variable
+
+    - name: sorting
+      title: Sorting
+      type: List
+      options:
+        - title: None
+          name:  none
+        - title: Ascending
+          name:  ascending
+        - title: Descending
+          name:  descending
+      default: none
+
+
+
+    - name: addLabels
+      title: Show % Labels
+      type: Bool
+      default: true
+
+    - name: addTotals
+      title: Show positive and negative totals (Centered Only)
+      type: Bool
+      default: true
+
+    - name: addMedianLine
+      title: Show 50% vertical line (Stacked Only)
+      type: Bool
+      default: true
+
+    - name: reverseLikert
+      title: Reverse the staking order
+      type: Bool
+      default: false
+      
+    - name: jamoviTheme
+      title: use Jamovi Plot Theme
+      type: Bool
+      default: false
+      
+...

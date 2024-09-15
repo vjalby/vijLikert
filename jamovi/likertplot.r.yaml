@@ -1,0 +1,27 @@
+---
+name:  likertplot
+title: Likert Plots
+jrs:   '1.1'
+refs: 
+    - ggplots
+
+items:
+    - name: plot
+      title: ""
+      type: Image
+      width:  600
+      height: 400
+      renderFun: .plot
+      clearWith:
+        - liks
+        - group
+        - groupBy
+        - type
+        - sorting
+        - addLabels
+        - addTotals
+        - addMedianLine
+        - reverseLikert
+        - jamoviTheme
+
+...
