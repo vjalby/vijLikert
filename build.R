@@ -6,3 +6,6 @@ jmvtools::create('vijLikert') # Module Name
 jmvtools::addAnalysis(name='likertplot', title='Likert Plot') # name = function/files name, title = menu item name
 
 jmvtools::install()
+
+install.packages('usethis')
+usethis::use_git()
