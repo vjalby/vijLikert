@@ -14,11 +14,20 @@ options:
     - name: liks
       title: Likert Variables
       type: Variables
-
+      required: true
+      suggested:
+        - ordinal
+      permitted:
+        - factor
+        
     - name: group
       title: Grouping Variable
       type: Variable
-
+      suggested:
+        - nominal
+      permitted:
+        - factor
+        
     - name: type
       title: Plot Type
       type: List

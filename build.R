@@ -7,5 +7,3 @@ jmvtools::addAnalysis(name='likertplot', title='Likert Plot') # name = function/
 
 jmvtools::install()
 
-install.packages('usethis')
-usethis::use_git()

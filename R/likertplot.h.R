@@ -25,10 +25,19 @@ likertplotOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
 
             private$..liks <- jmvcore::OptionVariables$new(
                 "liks",
-                liks)
+                liks,
+                required=TRUE,
+                suggested=list(
+                    "ordinal"),
+                permitted=list(
+                    "factor"))
             private$..group <- jmvcore::OptionVariable$new(
                 "group",
-                group)
+                group,
+                suggested=list(
+                    "nominal"),
+                permitted=list(
+                    "factor"))
             private$..type <- jmvcore::OptionList$new(
                 "type",
                 type,
@@ -205,6 +214,8 @@ likertplot <- function(
             `if`( ! missing(liks), liks, NULL),
             `if`( ! missing(group), group, NULL))
 
+    for (v in liks) if (v %in% names(data)) data[[v]] <- as.factor(data[[v]])
+    for (v in group) if (v %in% names(data)) data[[v]] <- as.factor(data[[v]])
 
     options <- likertplotOptions$new(
         liks = liks,
