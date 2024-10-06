@@ -2,7 +2,7 @@ title: Likert Plots
 name: likertplot
 jus: '3.0'
 stage: 0
-compilerMode: aggressive
+compilerMode: tame
 children:
   - type: VariableSupplier
     persistentItems: false
@@ -23,29 +23,113 @@ children:
             isTarget: true
   - type: LayoutBox
     margin: large
+    stretchFactor: 1
     children:
-      - type: ComboBox
-        name: type
+      - type: LayoutBox
+        cell:
+          column: 0
+          row: 0
+        stretchFactor: 1
+        children:
+          - type: Label
+            label: Plot Type
+            children:
+              - type: RadioButton
+                name: type_stacked
+                optionName: type
+                optionPart: stacked
+                label: Stacked
+              - type: RadioButton
+                name: type_centered
+                optionName: type
+                optionPart: centered
+                label: Centered
+      - type: LayoutBox
+        cell:
+          column: 1
+          row: 0
+        stretchFactor: 1
+        children:
+          - type: Label
+            label: Sorting
+            children:
+              - type: RadioButton
+                name: sorting_none
+                optionName: sorting
+                optionPart: none
+                label: None
+              - type: RadioButton
+                name: sorting_descending
+                optionName: sorting
+                optionPart: descending
+                label: Descending
+              - type: RadioButton
+                name: sorting_ascending
+                optionName: sorting
+                optionPart: ascending
+                label: Ascending
+      - type: LayoutBox
+        cell:
+          column: 2
+          row: 0
+        stretchFactor: 1
+        children:
+          - type: Label
+            label: Group
+            children:
+              - type: RadioButton
+                name: groupBy_variable
+                optionName: groupBy
+                optionPart: variable
+                label: By Variable
+              - type: RadioButton
+                name: groupBy_group
+                optionName: groupBy
+                optionPart: group
+                label: By Group
   - type: LayoutBox
     margin: large
+    stretchFactor: 1
     children:
-      - type: ComboBox
-        name: groupBy
-  - type: LayoutBox
-    margin: large
-    children:
-      - type: ComboBox
-        name: sorting
-  - type: LayoutBox
-    margin: large
-    children:
-      - type: CheckBox
-        name: addLabels
-      - type: CheckBox
-        name: addTotals
-      - type: CheckBox
-        name: addMedianLine
-      - type: CheckBox
-        name: reverseLikert
-      - type: CheckBox
-        name: jamoviTheme
+      - type: LayoutBox
+        cell:
+          column: 0
+          row: 0
+        stretchFactor: 1
+        children:
+          - type: Label
+            label: Plot Options
+            children:
+              - type: CheckBox
+                name: addLabels
+              - type: CheckBox
+                name: addTotals
+                enable: (type_centered)
+              - type: CheckBox
+                name: addMedianLine
+                enable: (type_stacked)
+              - type: CheckBox
+                name: reverseLikert
+      - type: LayoutBox
+        cell:
+          column: 1
+          row: 0
+        stretchFactor: 1
+        children:
+          - type: Label
+            label: "Plot Size & Color"
+            children:
+              - type: TextBox
+                name: plotW
+                format: number
+                suffix: px
+              - type: TextBox
+                name: plotH
+                format: number
+                suffix: px
+              - type: TextBox
+                name: textSize
+                format: number
+                suffix: pt
+              - type: ComboBox
+                name: plotColor

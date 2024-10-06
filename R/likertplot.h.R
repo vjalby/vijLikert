@@ -9,13 +9,16 @@ likertplotOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
             liks = NULL,
             group = NULL,
             type = "centered",
-            groupBy = "variable",
             sorting = "none",
+            groupBy = "variable",
             addLabels = TRUE,
             addTotals = TRUE,
             addMedianLine = TRUE,
             reverseLikert = FALSE,
-            jamoviTheme = FALSE, ...) {
+            plotW = 600,
+            plotH = 400,
+            textSize = 12,
+            plotColor = "BrBG", ...) {
 
             super$initialize(
                 package="vijLikert",
@@ -45,13 +48,6 @@ likertplotOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                     "centered",
                     "stacked"),
                 default="centered")
-            private$..groupBy <- jmvcore::OptionList$new(
-                "groupBy",
-                groupBy,
-                options=list(
-                    "variable",
-                    "group"),
-                default="variable")
             private$..sorting <- jmvcore::OptionList$new(
                 "sorting",
                 sorting,
@@ -60,6 +56,13 @@ likertplotOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                     "ascending",
                     "descending"),
                 default="none")
+            private$..groupBy <- jmvcore::OptionList$new(
+                "groupBy",
+                groupBy,
+                options=list(
+                    "variable",
+                    "group"),
+                default="variable")
             private$..addLabels <- jmvcore::OptionBool$new(
                 "addLabels",
                 addLabels,
@@ -76,44 +79,81 @@ likertplotOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                 "reverseLikert",
                 reverseLikert,
                 default=FALSE)
-            private$..jamoviTheme <- jmvcore::OptionBool$new(
-                "jamoviTheme",
-                jamoviTheme,
-                default=FALSE)
+            private$..plotW <- jmvcore::OptionNumber$new(
+                "plotW",
+                plotW,
+                min=400,
+                max=800,
+                default=600)
+            private$..plotH <- jmvcore::OptionNumber$new(
+                "plotH",
+                plotH,
+                min=300,
+                max=1600,
+                default=400)
+            private$..textSize <- jmvcore::OptionNumber$new(
+                "textSize",
+                textSize,
+                min=6,
+                max=24,
+                default=12)
+            private$..plotColor <- jmvcore::OptionList$new(
+                "plotColor",
+                plotColor,
+                options=list(
+                    "BrBG",
+                    "PiYG",
+                    "PRGn",
+                    "PuOr",
+                    "RdBu",
+                    "RdGy",
+                    "RdYlBu",
+                    "RdYlGn",
+                    "Spectral"),
+                default="BrBG")
 
             self$.addOption(private$..liks)
             self$.addOption(private$..group)
             self$.addOption(private$..type)
-            self$.addOption(private$..groupBy)
             self$.addOption(private$..sorting)
+            self$.addOption(private$..groupBy)
             self$.addOption(private$..addLabels)
             self$.addOption(private$..addTotals)
             self$.addOption(private$..addMedianLine)
             self$.addOption(private$..reverseLikert)
-            self$.addOption(private$..jamoviTheme)
+            self$.addOption(private$..plotW)
+            self$.addOption(private$..plotH)
+            self$.addOption(private$..textSize)
+            self$.addOption(private$..plotColor)
         }),
     active = list(
         liks = function() private$..liks$value,
         group = function() private$..group$value,
         type = function() private$..type$value,
-        groupBy = function() private$..groupBy$value,
         sorting = function() private$..sorting$value,
+        groupBy = function() private$..groupBy$value,
         addLabels = function() private$..addLabels$value,
         addTotals = function() private$..addTotals$value,
         addMedianLine = function() private$..addMedianLine$value,
         reverseLikert = function() private$..reverseLikert$value,
-        jamoviTheme = function() private$..jamoviTheme$value),
+        plotW = function() private$..plotW$value,
+        plotH = function() private$..plotH$value,
+        textSize = function() private$..textSize$value,
+        plotColor = function() private$..plotColor$value),
     private = list(
         ..liks = NA,
         ..group = NA,
         ..type = NA,
-        ..groupBy = NA,
         ..sorting = NA,
+        ..groupBy = NA,
         ..addLabels = NA,
         ..addTotals = NA,
         ..addMedianLine = NA,
         ..reverseLikert = NA,
-        ..jamoviTheme = NA)
+        ..plotW = NA,
+        ..plotH = NA,
+        ..textSize = NA,
+        ..plotColor = NA)
 )
 
 likertplotResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
@@ -147,7 +187,11 @@ likertplotResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                     "addTotals",
                     "addMedianLine",
                     "reverseLikert",
-                    "jamoviTheme")))}))
+                    "jamoviTheme",
+                    "plotW",
+                    "plotH",
+                    "textSize",
+                    "plotColor")))}))
 
 likertplotBase <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
     "likertplotBase",
@@ -177,13 +221,16 @@ likertplotBase <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
 #' @param liks .
 #' @param group .
 #' @param type .
-#' @param groupBy .
 #' @param sorting .
+#' @param groupBy .
 #' @param addLabels .
 #' @param addTotals .
 #' @param addMedianLine .
 #' @param reverseLikert .
-#' @param jamoviTheme .
+#' @param plotW .
+#' @param plotH .
+#' @param textSize .
+#' @param plotColor .
 #' @return A results object containing:
 #' \tabular{llllll}{
 #'   \code{results$plot} \tab \tab \tab \tab \tab an image \cr
@@ -195,13 +242,16 @@ likertplot <- function(
     liks,
     group,
     type = "centered",
-    groupBy = "variable",
     sorting = "none",
+    groupBy = "variable",
     addLabels = TRUE,
     addTotals = TRUE,
     addMedianLine = TRUE,
     reverseLikert = FALSE,
-    jamoviTheme = FALSE) {
+    plotW = 600,
+    plotH = 400,
+    textSize = 12,
+    plotColor = "BrBG") {
 
     if ( ! requireNamespace("jmvcore", quietly=TRUE))
         stop("likertplot requires jmvcore to be installed (restart may be required)")
@@ -221,13 +271,16 @@ likertplot <- function(
         liks = liks,
         group = group,
         type = type,
-        groupBy = groupBy,
         sorting = sorting,
+        groupBy = groupBy,
         addLabels = addLabels,
         addTotals = addTotals,
         addMedianLine = addMedianLine,
         reverseLikert = reverseLikert,
-        jamoviTheme = jamoviTheme)
+        plotW = plotW,
+        plotH = plotH,
+        textSize = textSize,
+        plotColor = plotColor)
 
     analysis <- likertplotClass$new(
         options = options,

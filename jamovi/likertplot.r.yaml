@@ -23,5 +23,9 @@ items:
         - addMedianLine
         - reverseLikert
         - jamoviTheme
+        - plotW
+        - plotH
+        - textSize
+        - plotColor
 
 ...

@@ -1,7 +1,7 @@
 ---
 title: Bar Plots For Likert Scale Variables
 name: vijLikert
-version: 0.1.2
+version: 0.2.0
 jms: '1.0'
 authors:
   - Vincent Jalby
@@ -9,7 +9,7 @@ maintainer: Vincent Jalby <vincent.jalby@unilim.fr>
 date: '2024-09-30'
 type: R
 description: >-
-  Barplots for Likert scale variables using  <a
+  (beta) Barplots for Likert scale variables using  <a
   href="https://larmarange.github.io/ggstats/" target="_blank">ggstats R
   package</a> by Joseph Larmarange.
 analyses:

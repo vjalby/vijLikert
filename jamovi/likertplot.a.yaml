@@ -38,16 +38,6 @@ options:
           name:  stacked
       default: centered
 
-    - name: groupBy
-      title: Group By
-      type: List
-      options:
-        - title: Variable
-          name:  variable
-        - title: Group
-          name:  group
-      default: variable
-
     - name: sorting
       title: Sorting
       type: List
@@ -59,8 +49,16 @@ options:
         - title: Descending
           name:  descending
       default: none
-
-
+      
+    - name: groupBy
+      title: Group By
+      type: List
+      options:
+        - title: Variable
+          name:  variable
+        - title: Group
+          name:  group
+      default: variable
 
     - name: addLabels
       title: Show % Labels
@@ -68,12 +66,12 @@ options:
       default: true
 
     - name: addTotals
-      title: Show positive and negative totals (Centered Only)
+      title: Show Totals (Centered Only)
       type: Bool
       default: true
 
     - name: addMedianLine
-      title: Show 50% vertical line (Stacked Only)
+      title: Show 50% Line (Stacked Only)
       type: Bool
       default: true
 
@@ -81,10 +79,50 @@ options:
       title: Reverse the staking order
       type: Bool
       default: false
-      
-    - name: jamoviTheme
-      title: use Jamovi Plot Theme
-      type: Bool
-      default: false
-      
+
+    - name: plotW
+      type: Number
+      title: Width
+      min: 400
+      max: 800
+      default: 600
+  
+    - name: plotH
+      type: Number
+      title: Height
+      min: 300
+      max: 1600
+      default: 400      
+
+    - name: textSize
+      type: Number
+      title: Text
+      min: 6
+      max: 24
+      default: 12  
+
+    - name: plotColor
+      title: "Palette"
+      type: List
+      options:
+        - title: Brown and Green
+          name:  BrBG
+        - title: Pink and Green
+          name:  PiYG
+        - title: Purple and Green
+          name:  PRGn
+        - title: Orange and Purple
+          name:  PuOr          
+        - title: Red and Blue
+          name:  RdBu 
+        - title: Red and Gray
+          name:  RdGy 
+        - title: Red, Yellow and Blue
+          name:  RdYlBu          
+        - title: Red, Yellow and Green
+          name:  RdYlGn 
+        - title: Spectral
+          name:  Spectral 
+      default: BrBG
+
 ...
