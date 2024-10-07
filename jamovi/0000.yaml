@@ -1,7 +1,7 @@
 ---
 title: Bar Plots For Likert Scale Variables
 name: vijLikert
-version: 0.2.1
+version: 0.2.2
 jms: '1.0'
 authors:
   - Vincent Jalby

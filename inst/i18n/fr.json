@@ -1,0 +1,139 @@
+{
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "plural_forms": "nplurals=2; plural=(n != 1)",
+                "lang": "fr"
+            },
+            "<p>(beta) Bar plots for Likert scale variables using  <a href=\"https://larmarange.github.io/ggstats/\" target=\"_blank\">ggstats R package</a> by Joseph Larmarange. The module is available in the  Exploration Menu. Project source is available at <a href=\"https://github.com/vjalby/vijLikert\" target=\"_blank\">Github</a>.</p>": [
+                ""
+            ],
+            "A demonstration dataset for Likert scale bar plots.": [
+                ""
+            ],
+            "Ascending": [
+                "Croissant"
+            ],
+            "Bar Plots For Likert Scale Variables": [
+                ""
+            ],
+            "Brown and Green": [
+                "Marron et vert"
+            ],
+            "By Group": [
+                "Par groupe"
+            ],
+            "By Variable": [
+                "Par variable"
+            ],
+            "Centered": [
+                "Centré"
+            ],
+            "Descending": [
+                "Décroissant"
+            ],
+            "Exploration": [
+                ""
+            ],
+            "Group": [
+                "Séparer"
+            ],
+            "Group By": [
+                "Séparer par"
+            ],
+            "Grouping Variable": [
+                "Séparer par"
+            ],
+            "Height": [
+                "Hauteur"
+            ],
+            "Likert": [
+                ""
+            ],
+            "Likert Plots": [
+                "Graphique Likert"
+            ],
+            "Likert Variables": [
+                "Variables de Likert"
+            ],
+            "None": [
+                "Aucun"
+            ],
+            "Orange and Purple": [
+                "Orange et violet"
+            ],
+            "Palette": [
+                ""
+            ],
+            "Pink and Green": [
+                "Rose et vert"
+            ],
+            "Plot Options": [
+                "Options graphiques"
+            ],
+            "Plot Size & Color": [
+                "Taille et couleur"
+            ],
+            "Plot Type": [
+                "Type de graphique"
+            ],
+            "pt": [
+                ""
+            ],
+            "Purple and Green": [
+                "Violet et vert"
+            ],
+            "px": [
+                ""
+            ],
+            "Red and Blue": [
+                "Rouge et bleu"
+            ],
+            "Red and Gray": [
+                "Rouge et gris"
+            ],
+            "Red, Yellow and Blue": [
+                "Rouge, jaune et bleu"
+            ],
+            "Red, Yellow and Green": [
+                "Rouge, jaune et vert"
+            ],
+            "Reverse the staking order": [
+                "Inverser les modalités"
+            ],
+            "Show % Labels": [
+                "Afficher les %"
+            ],
+            "Show 50% Line (Stacked Only)": [
+                "Afficher la ligne de 50 % (empilé)"
+            ],
+            "Show Totals (Centered Only)": [
+                "Afficher les totaux (centré)"
+            ],
+            "Sorting": [
+                "Tri"
+            ],
+            "Spectral": [
+                ""
+            ],
+            "Stacked": [
+                "Empilé"
+            ],
+            "Text": [
+                "Texte"
+            ],
+            "Variable": [
+                ""
+            ],
+            "vij Likert PLots": [
+                ""
+            ],
+            "Width": [
+                "Largeur"
+            ]
+        }
+    },
+    "code": "fr"
+}
