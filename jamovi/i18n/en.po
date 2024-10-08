@@ -1,0 +1,195 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-07-26 12:08:06+01000\n"
+"PO-Revision-Date: 2021-07-29 16:59:59+01000\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: package.description
+msgid "<p>(beta) Bar plots for Likert scale variables using  <a href=\"https://larmarange.github.io/ggstats/\" target=\"_blank\">ggstats R package</a> by Joseph Larmarange. The module is available in the  Exploration Menu. Project source is available at <a href=\"https://github.com/vjalby/vijLikert\" target=\"_blank\">Github</a>.</p>"
+msgstr ""
+
+#: package/datasets/Likert.description
+msgid "A demonstration dataset for Likert scale bar plots."
+msgstr ""
+
+#: likertplot/options/sorting/ascending.title
+#: likertplot/ui[1][1][0]/sorting_ascending.label
+msgid "Ascending"
+msgstr ""
+
+#: package.title
+msgid "Bar Plots For Likert Scale Variables"
+msgstr ""
+
+#: likertplot/options/plotColor/BrBG.title
+msgid "Brown and Green"
+msgstr ""
+
+#: likertplot/ui[1][2][0]/groupBy_group.label
+msgid "By Group"
+msgstr ""
+
+#: likertplot/ui[1][2][0]/groupBy_variable.label
+msgid "By Variable"
+msgstr ""
+
+#: likertplot/options/type/centered.title
+#: likertplot/ui[1][0][0]/type_centered.label
+msgid "Centered"
+msgstr ""
+
+#: likertplot/options/sorting/descending.title
+#: likertplot/ui[1][1][0]/sorting_descending.label
+msgid "Descending"
+msgstr ""
+
+#: package/analyses/likertplot.menuGroup
+#: likertplot/options.menuGroup
+msgid "Exploration"
+msgstr ""
+
+#: likertplot/options/groupBy/group.title
+#: likertplot/ui[1][2][0].label
+msgid "Group"
+msgstr ""
+
+#: likertplot/options/groupBy.title
+msgid "Group By"
+msgstr ""
+
+#: likertplot/options/group.title
+#: likertplot/ui[0][1].label
+msgid "Grouping Variable"
+msgstr ""
+
+#: likertplot/options/plotH.title
+msgid "Height"
+msgstr ""
+
+#: package/datasets/Likert.name
+msgid "Likert"
+msgstr ""
+
+#: package/analyses/likertplot.title
+#: package/analyses/likertplot.menuTitle
+#: likertplot/options.title
+#: likertplot/options.menuTitle
+#: likertplot/ui.title
+#: likertplot/results.title
+msgid "Likert Plots"
+msgstr ""
+
+#: likertplot/options/liks.title
+#: likertplot/ui[0][0].label
+msgid "Likert Variables"
+msgstr ""
+
+#: likertplot/options/sorting/none.title
+#: likertplot/ui[1][1][0]/sorting_none.label
+msgid "None"
+msgstr ""
+
+#: likertplot/options/plotColor/PuOr.title
+msgid "Orange and Purple"
+msgstr ""
+
+#: likertplot/options/plotColor.title
+msgid "Palette"
+msgstr ""
+
+#: likertplot/options/plotColor/PiYG.title
+msgid "Pink and Green"
+msgstr ""
+
+#: likertplot/ui[2][0][0].label
+msgid "Plot Options"
+msgstr ""
+
+#: likertplot/ui[2][1][0].label
+msgid "Plot Size & Color"
+msgstr ""
+
+#: likertplot/options/type.title
+#: likertplot/ui[1][0][0].label
+msgid "Plot Type"
+msgstr ""
+
+#: likertplot/ui[2][1][0]/textSize.suffix
+msgid "pt"
+msgstr ""
+
+#: likertplot/options/plotColor/PRGn.title
+msgid "Purple and Green"
+msgstr ""
+
+#: likertplot/ui[2][1][0]/plotW.suffix
+#: likertplot/ui[2][1][0]/plotH.suffix
+msgid "px"
+msgstr ""
+
+#: likertplot/options/plotColor/RdBu.title
+msgid "Red and Blue"
+msgstr ""
+
+#: likertplot/options/plotColor/RdGy.title
+msgid "Red and Gray"
+msgstr ""
+
+#: likertplot/options/plotColor/RdYlBu.title
+msgid "Red, Yellow and Blue"
+msgstr ""
+
+#: likertplot/options/plotColor/RdYlGn.title
+msgid "Red, Yellow and Green"
+msgstr ""
+
+#: likertplot/options/reverseLikert.title
+msgid "Reverse the staking order"
+msgstr ""
+
+#: likertplot/options/addLabels.title
+msgid "Show % Labels"
+msgstr ""
+
+#: likertplot/options/addMedianLine.title
+msgid "Show 50% Line (Stacked Only)"
+msgstr ""
+
+#: likertplot/options/addTotals.title
+msgid "Show Totals (Centered Only)"
+msgstr ""
+
+#: likertplot/options/sorting.title
+#: likertplot/ui[1][1][0].label
+msgid "Sorting"
+msgstr ""
+
+#: likertplot/options/plotColor/Spectral.title
+msgid "Spectral"
+msgstr ""
+
+#: likertplot/options/type/stacked.title
+#: likertplot/ui[1][0][0]/type_stacked.label
+msgid "Stacked"
+msgstr ""
+
+#: likertplot/options/textSize.title
+msgid "Text"
+msgstr ""
+
+#: likertplot/options/groupBy/variable.title
+msgid "Variable"
+msgstr ""
+
+#: package/analyses/likertplot.menuSubgroup
+#: likertplot/options.menuSubgroup
+msgid "vij Likert PLots"
+msgstr ""
+
+#: likertplot/options/plotW.title
+msgid "Width"
+msgstr ""
