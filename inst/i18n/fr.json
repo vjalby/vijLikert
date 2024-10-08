@@ -8,10 +8,10 @@
                 "lang": "fr"
             },
             "<p>(beta) Bar plots for Likert scale variables using  <a href=\"https://larmarange.github.io/ggstats/\" target=\"_blank\">ggstats R package</a> by Joseph Larmarange. The module is available in the  Exploration Menu. Project source is available at <a href=\"https://github.com/vjalby/vijLikert\" target=\"_blank\">Github</a>.</p>": [
-                ""
+                "Diagramme en barres pour variables issues d'échelles de Likert utilisant le package R <a href=\"https://larmarange.github.io/ggstats/\" target=\"_blank\">ggstats</a> de Joseph Larmarange. Ce module est disponible dans le menu Exploration. Le source du projet est disponible sur <a href=\"https://github.com/vjalby/vijLikert\" target=\"_blank\">Github</a>.</p>"
             ],
             "A demonstration dataset for Likert scale bar plots.": [
-                ""
+                "Fichier de démonstration d'un diagramme en barres pour variables de Likert."
             ],
             "Ascending": [
                 "Croissant"
@@ -29,7 +29,7 @@
                 "Par variable"
             ],
             "Centered": [
-                "Centré"
+                "Centrées"
             ],
             "Descending": [
                 "Décroissant"
@@ -53,7 +53,7 @@
                 ""
             ],
             "Likert Plots": [
-                "Graphique Likert"
+                "Diagramme de Likert"
             ],
             "Likert Variables": [
                 "Variables de Likert"
@@ -77,7 +77,7 @@
                 "Taille et couleur"
             ],
             "Plot Type": [
-                "Type de graphique"
+                "Type de barres"
             ],
             "pt": [
                 ""
@@ -107,10 +107,10 @@
                 "Afficher les %"
             ],
             "Show 50% Line (Stacked Only)": [
-                "Afficher la ligne de 50 % (empilé)"
+                "Afficher la ligne de 50 % (empilées)"
             ],
             "Show Totals (Centered Only)": [
-                "Afficher les totaux (centré)"
+                "Afficher les totaux (centrées)"
             ],
             "Sorting": [
                 "Tri"
@@ -119,7 +119,7 @@
                 ""
             ],
             "Stacked": [
-                "Empilé"
+                "Empilées"
             ],
             "Text": [
                 "Texte"
