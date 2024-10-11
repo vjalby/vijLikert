@@ -10,8 +10,7 @@ msgstr ""
 
 #: package.description
 msgid "<p>(beta) Bar plots for Likert scale variables using  <a href=\"https://larmarange.github.io/ggstats/\" target=\"_blank\">ggstats R package</a> by Joseph Larmarange. The module is available in the  Exploration Menu. Project source is available at <a href=\"https://github.com/vjalby/vijLikert\" target=\"_blank\">Github</a>.</p>"
-msgstr "Diagramme en barres pour variables issues d'échelles de Likert utilisant le package R <a href=\"https://larmarange.github.io/ggstats/\" target=\"_blank\">ggstats</a> de Joseph Larmarange. Ce module est disponible dans le menu Exploration. Le source du projet est disponible sur <a href=\"https://github.com/vjalby/vijLikert\" target=\"_blank\">Github</a>.</p>"
-
+msgstr "Diagrammes en barres pour variables issues d'échelles de Likert utilisant le package R <a href=\"https://larmarange.github.io/ggstats/\" target=\"_blank\">ggstats</a> de Joseph Larmarange. Ce module est disponible dans le menu Exploration. Le source du projet est disponible sur <a href=\"https://github.com/vjalby/vijLikert\" target=\"_blank\">Github</a>.</p>"
 
 #: package/datasets/Likert.description
 msgid "A demonstration dataset for Likert scale bar plots."
@@ -23,8 +22,8 @@ msgid "Ascending"
 msgstr "Croissant"
 
 #: package.title
-msgid "Bar Plots For Likert Scale Variables"
-msgstr ""
+msgid "Bar Plots for Likert Scale Variables"
+msgstr "Diagrammes en barres pour variables de Likert"
 
 #: likertplot/options/plotColor/BrBG.title
 msgid "Brown and Green"
@@ -67,7 +66,7 @@ msgstr "Séparer par"
 msgid "Grouping Variable"
 msgstr "Séparer par"
 
-#: likertplot/options/plotH.title
+#: likertplot/options/plotHeight.title
 msgid "Height"
 msgstr "Hauteur"
 
@@ -127,8 +126,8 @@ msgstr ""
 msgid "Purple and Green"
 msgstr "Violet et vert"
 
-#: likertplot/ui[2][1][0]/plotW.suffix
-#: likertplot/ui[2][1][0]/plotH.suffix
+#: likertplot/ui[2][1][0]/plotWidth.suffix
+#: likertplot/ui[2][1][0]/plotHeight.suffix
 msgid "px"
 msgstr ""
 
@@ -188,9 +187,9 @@ msgstr ""
 
 #: package/analyses/likertplot.menuSubgroup
 #: likertplot/options.menuSubgroup
-msgid "vij Likert PLots"
+msgid "vijLikert"
 msgstr ""
 
-#: likertplot/options/plotW.title
+#: likertplot/options/plotWidth.title
 msgid "Width"
 msgstr "Largeur"

@@ -22,7 +22,7 @@ msgid "Ascending"
 msgstr ""
 
 #: package.title
-msgid "Bar Plots For Likert Scale Variables"
+msgid "Bar Plots for Likert Scale Variables"
 msgstr ""
 
 #: likertplot/options/plotColor/BrBG.title
@@ -66,7 +66,7 @@ msgstr ""
 msgid "Grouping Variable"
 msgstr ""
 
-#: likertplot/options/plotH.title
+#: likertplot/options/plotHeight.title
 msgid "Height"
 msgstr ""
 
@@ -126,8 +126,8 @@ msgstr ""
 msgid "Purple and Green"
 msgstr ""
 
-#: likertplot/ui[2][1][0]/plotW.suffix
-#: likertplot/ui[2][1][0]/plotH.suffix
+#: likertplot/ui[2][1][0]/plotWidth.suffix
+#: likertplot/ui[2][1][0]/plotHeight.suffix
 msgid "px"
 msgstr ""
 
@@ -187,9 +187,9 @@ msgstr ""
 
 #: package/analyses/likertplot.menuSubgroup
 #: likertplot/options.menuSubgroup
-msgid "vij Likert PLots"
+msgid "vijLikert"
 msgstr ""
 
-#: likertplot/options/plotW.title
+#: likertplot/options/plotWidth.title
 msgid "Width"
 msgstr ""

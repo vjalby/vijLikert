@@ -8,7 +8,7 @@
                 "lang": "fr"
             },
             "<p>(beta) Bar plots for Likert scale variables using  <a href=\"https://larmarange.github.io/ggstats/\" target=\"_blank\">ggstats R package</a> by Joseph Larmarange. The module is available in the  Exploration Menu. Project source is available at <a href=\"https://github.com/vjalby/vijLikert\" target=\"_blank\">Github</a>.</p>": [
-                "Diagramme en barres pour variables issues d'échelles de Likert utilisant le package R <a href=\"https://larmarange.github.io/ggstats/\" target=\"_blank\">ggstats</a> de Joseph Larmarange. Ce module est disponible dans le menu Exploration. Le source du projet est disponible sur <a href=\"https://github.com/vjalby/vijLikert\" target=\"_blank\">Github</a>.</p>"
+                "Diagrammes en barres pour variables issues d'échelles de Likert utilisant le package R <a href=\"https://larmarange.github.io/ggstats/\" target=\"_blank\">ggstats</a> de Joseph Larmarange. Ce module est disponible dans le menu Exploration. Le source du projet est disponible sur <a href=\"https://github.com/vjalby/vijLikert\" target=\"_blank\">Github</a>.</p>"
             ],
             "A demonstration dataset for Likert scale bar plots.": [
                 "Fichier de démonstration d'un diagramme en barres pour variables de Likert."
@@ -16,8 +16,8 @@
             "Ascending": [
                 "Croissant"
             ],
-            "Bar Plots For Likert Scale Variables": [
-                ""
+            "Bar Plots for Likert Scale Variables": [
+                "Diagrammes en barres pour variables de Likert"
             ],
             "Brown and Green": [
                 "Marron et vert"
@@ -127,7 +127,7 @@
             "Variable": [
                 ""
             ],
-            "vij Likert PLots": [
+            "vijLikert": [
                 ""
             ],
             "Width": [

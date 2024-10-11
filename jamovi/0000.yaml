@@ -1,12 +1,12 @@
 ---
-title: Bar Plots For Likert Scale Variables
+title: Bar Plots for Likert Scale Variables
 name: vijLikert
-version: 0.2.3
+version: 0.3.0
 jms: '1.0'
 authors:
   - Vincent Jalby
 maintainer: Vincent Jalby <vincent.jalby@unilim.fr>
-date: '2024-10-08'
+date: '2024-10-11'
 type: R
 description: >-
   <p>(beta) Bar plots for Likert scale variables using  <a
@@ -20,7 +20,7 @@ analyses:
     ns: vijLikert
     menuGroup: Exploration
     menuTitle: Likert Plots
-    menuSubgroup: vij Likert PLots
+    menuSubgroup: vijLikert
 usesNative: true
 minApp: 1.0.8
 datasets:

@@ -3,7 +3,7 @@ name:  likertplot
 title: Likert Plots
 menuGroup: Exploration
 menuTitle: Likert Plots
-menuSubgroup: vij Likert PLots
+menuSubgroup: vijLikert
 version: '1.0.0'
 jas: '1.2'
 
@@ -80,17 +80,17 @@ options:
       type: Bool
       default: false
 
-    - name: plotW
+    - name: plotWidth
       type: Number
       title: Width
-      min: 400
+      min: 300
       max: 800
       default: 600
   
-    - name: plotH
+    - name: plotHeight
       type: Number
       title: Height
-      min: 300
+      min: 200
       max: 1600
       default: 400      
 

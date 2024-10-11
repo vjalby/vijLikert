@@ -15,8 +15,8 @@ likertplotOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
             addTotals = TRUE,
             addMedianLine = TRUE,
             reverseLikert = FALSE,
-            plotW = 600,
-            plotH = 400,
+            plotWidth = 600,
+            plotHeight = 400,
             textSize = 12,
             plotColor = "BrBG", ...) {
 
@@ -79,16 +79,16 @@ likertplotOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                 "reverseLikert",
                 reverseLikert,
                 default=FALSE)
-            private$..plotW <- jmvcore::OptionNumber$new(
-                "plotW",
-                plotW,
-                min=400,
+            private$..plotWidth <- jmvcore::OptionNumber$new(
+                "plotWidth",
+                plotWidth,
+                min=300,
                 max=800,
                 default=600)
-            private$..plotH <- jmvcore::OptionNumber$new(
-                "plotH",
-                plotH,
-                min=300,
+            private$..plotHeight <- jmvcore::OptionNumber$new(
+                "plotHeight",
+                plotHeight,
+                min=200,
                 max=1600,
                 default=400)
             private$..textSize <- jmvcore::OptionNumber$new(
@@ -121,8 +121,8 @@ likertplotOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
             self$.addOption(private$..addTotals)
             self$.addOption(private$..addMedianLine)
             self$.addOption(private$..reverseLikert)
-            self$.addOption(private$..plotW)
-            self$.addOption(private$..plotH)
+            self$.addOption(private$..plotWidth)
+            self$.addOption(private$..plotHeight)
             self$.addOption(private$..textSize)
             self$.addOption(private$..plotColor)
         }),
@@ -136,8 +136,8 @@ likertplotOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
         addTotals = function() private$..addTotals$value,
         addMedianLine = function() private$..addMedianLine$value,
         reverseLikert = function() private$..reverseLikert$value,
-        plotW = function() private$..plotW$value,
-        plotH = function() private$..plotH$value,
+        plotWidth = function() private$..plotWidth$value,
+        plotHeight = function() private$..plotHeight$value,
         textSize = function() private$..textSize$value,
         plotColor = function() private$..plotColor$value),
     private = list(
@@ -150,8 +150,8 @@ likertplotOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
         ..addTotals = NA,
         ..addMedianLine = NA,
         ..reverseLikert = NA,
-        ..plotW = NA,
-        ..plotH = NA,
+        ..plotWidth = NA,
+        ..plotHeight = NA,
         ..textSize = NA,
         ..plotColor = NA)
 )
@@ -227,8 +227,8 @@ likertplotBase <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
 #' @param addTotals .
 #' @param addMedianLine .
 #' @param reverseLikert .
-#' @param plotW .
-#' @param plotH .
+#' @param plotWidth .
+#' @param plotHeight .
 #' @param textSize .
 #' @param plotColor .
 #' @return A results object containing:
@@ -248,8 +248,8 @@ likertplot <- function(
     addTotals = TRUE,
     addMedianLine = TRUE,
     reverseLikert = FALSE,
-    plotW = 600,
-    plotH = 400,
+    plotWidth = 600,
+    plotHeight = 400,
     textSize = 12,
     plotColor = "BrBG") {
 
@@ -277,8 +277,8 @@ likertplot <- function(
         addTotals = addTotals,
         addMedianLine = addMedianLine,
         reverseLikert = reverseLikert,
-        plotW = plotW,
-        plotH = plotH,
+        plotWidth = plotWidth,
+        plotHeight = plotHeight,
         textSize = textSize,
         plotColor = plotColor)
 

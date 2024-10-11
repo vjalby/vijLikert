@@ -120,11 +120,11 @@ children:
             label: "Plot Size & Color"
             children:
               - type: TextBox
-                name: plotW
+                name: plotWidth
                 format: number
                 suffix: px
               - type: TextBox
-                name: plotH
+                name: plotHeight
                 format: number
                 suffix: px
               - type: TextBox
