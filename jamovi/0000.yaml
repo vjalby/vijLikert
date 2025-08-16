@@ -21,6 +21,7 @@ analyses:
     menuGroup: Exploration
     menuTitle: Likert Plots
     menuSubgroup: vijLikert
+    category: analyses
 usesNative: true
 minApp: 1.0.8
 datasets:
