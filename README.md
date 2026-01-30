@@ -6,6 +6,10 @@
 
 ## Version history
 
+### 2026-01-30
+
+-  This module is not updated anymore. Likert plot is now available in [vijPlots](https://github.com/vjalby/vijPlots). 
+
 ### 2024-10-11 / 0.3.0 (beta)
 
 -   Improve french translation
